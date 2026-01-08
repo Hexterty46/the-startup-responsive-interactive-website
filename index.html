@@ -5,21 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funda</title>
     <script defer src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/styleguide.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li>
-            <a href="">Menu</a><img src="./icons/menu.svg" alt="menu-icoon" />
+          <li class="nav-item">
+            <a href="">
+              <img src="./icons/menu.svg" alt="menu-icoon-svg" />
+              <span>Menu</span>
+            </a>
           </li>
-          <li>
-            <a href=""><img src="./icons/Logo.svg" alt="logo-icoon" /></a>
+          <li class="nav-item logo-item">
+            <a href="">
+              <img src="./icons/Logo.svg" alt="logo-icoon-svg" />
+            </a>
           </li>
-          <li><a href="">Mijn huis</a></li>
-          <li><a href="">Favorieten</a></li>
-          <li><a href="">Inloggen</a></li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="./icons/house.svg" alt="Huis-logo-svg" />
+              <span>Mijn Huis</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="./icons/heart.svg" alt="Hart-logo-svg" />
+              <span>Favorieten</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#">
+              <img src="./icons/avatar-anonymous.svg" alt="inloggen-logo-svg" />
+              <span>Inloggen</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -27,9 +48,9 @@
     <main>
       <div class="main-image-picture">
         <img src="./images/main.png" alt="Begin foto voor het huis" />
-        <div class="main-image-icons">
-          <button>(Share)</button>
-          <button>(Like)</button>
+        <div class="main-image-buttons">
+          <button><img src="./icons/share-blue.svg" alt="delen-knop-svg" /></button>
+          <button><img src="./icons/heart-blue.svg" alt="hart-knop-svg" /></button>
         </div>
       </div>
       <div class="bottom-image-pictures">
@@ -39,7 +60,7 @@
               <li>
                 <a href="">
                   <div class="media-wrapper">
-                    <img src="" alt />
+                    <img src="" alt="" />
                     <svg></svg>
                   </div>
                   <span>Plattegrond</span>
@@ -54,7 +75,7 @@
               <li>
                 <a href="">
                   <div class="media-wrapper">
-                    <img src="" alt />
+                    <img src="" alt="" />
                     <svg></svg>
                   </div>
                   <span>360 foto's</span>

@@ -1,7 +1,63 @@
-/* header {
-    background-color: orange;
-} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Proxima Nova, Arial, sans-serif, serif;
+}
 
-img {
-    width: 375px;
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/fonts/Proxima-Nova-Regular.ttf");
+}
+
+header {
+  background-color: var(--primary-color);
+}
+
+.main-nav {
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--tertiary-text-color);
+    font-size: var(--font-size-xs);
+  }
+
+  .main-nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    list-style: none;
+
+    nav-item {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.main-image-picture {
+  position: relative;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+button {
+  background: none;
+  color: var(--link-color);
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--link-color);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  
+
+  &:hover {
+    background-color: (--link-color);
+  }
 }
