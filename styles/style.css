@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Proxima Nova, Arial, sans-serif, serif;
+  line-height: 1.5;
 }
 
 @font-face {
@@ -12,6 +13,32 @@
 
 header {
   background-color: var(--primary-color);
+}
+
+body {
+  width: 375px;
+  color: var(--primary-text-color);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: var(--font-size-l);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: var(--font-size-m);
+  font-weight: 600;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 .main-nav {
@@ -28,7 +55,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0.75rem;
+    padding: 8px 12px;
     list-style: none;
 
     nav-item {
@@ -40,6 +67,84 @@ header {
   }
 }
 
+.bottom-image-pictures {
+  display: flex;
+  gap: 16px;
+}
+
+.main-listing-info {
+  position: relative;
+  margin: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--primary-border-color);
+
+  dl {
+    display: flex;
+    gap: 4px;
+  }
+
+  .nieuw {
+    padding: 3px 8px;
+    color: var(--tertiary-text-color);
+    margin-bottom: 8px;
+    background-color: var(--primary-color);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    border-radius: 4px;
+  }
+}
+
+.listing-description {
+  position: relative;
+  margin: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--primary-border-color);
+}
+
+.kenmerken {
+  section {
+    h3 {
+      display: flex;
+      gap: .5rem;
+      padding: 0.5rem 0.5rem 0 0.5rem;
+    }
+    border: 1px solid var(--primary-border-color);
+    border-radius: 8px;
+    margin-top: 16px;
+    dl {
+      dd {
+        padding: .5rem;
+      }
+      dt {
+        padding: .5rem;
+        color: var(--secondary-text-color);
+        border-top: 1px solid var(--primary-border-color);
+      }
+    }
+  }
+  position: relative;
+  margin: 16px;
+  border-bottom: 1px solid var(--primary-border-color);
+}
+
+.kaart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+}
+
+.overdracht {
+  border-bottom: 1px solid var(--primary-border-color);
+  padding-bottom: 16px;
+  .login-content {
+    color: var(--link-color);
+  }
+}
+
 .main-image-picture {
   position: relative;
 
@@ -48,12 +153,18 @@ header {
   }
 }
 
+.main-image-buttons {
+  position: absolute;
+  top: 3px;
+  right: 0px;
+}
+
 button {
-  background: none;
+  background: var(--tertiary-text-color);
   color: var(--link-color);
-  padding: 0.5rem 0.75rem;
+  padding: 8px 12px;
   border: 1px solid var(--link-color);
-  border-radius: 0.25rem;
+  border-radius: 5px;
   cursor: pointer;
   
 
