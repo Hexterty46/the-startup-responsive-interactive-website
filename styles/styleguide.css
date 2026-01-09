@@ -16,3 +16,24 @@
   --font-size-l: 1.25rem;
   --font-size-xl: 1.5rem;
 }
+
+
+h1 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: var(--font-size-l);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: var(--font-size-m);
+  font-weight: 600;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
