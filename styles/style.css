@@ -21,6 +21,36 @@ body {
   line-height: 1.5;
 }
 
+h1 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-standart);
+}
+
+h2 {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-standart);
+}
+
+h3 {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-standart);
+}
+
+h4 {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-standart);
+}
+
+h5 {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-standart);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
 .main-nav {
   a {
     display: flex;
@@ -63,13 +93,13 @@ body {
     gap: 4px;
   }
 
-  .nieuw {
+  .new-span {
     padding: 3px 8px;
     color: var(--tertiary-text-color);
     margin-bottom: 8px;
     background-color: var(--primary-color);
     font-size: var(--font-size-xs);
-    font-weight: 600;
+    font-weight: var(--font-weight-standart);
     border-radius: 4px;
   }
 }
@@ -81,11 +111,11 @@ body {
   border-bottom: 1px solid var(--primary-border-color);
 }
 
-.kenmerken {
+.features {
   section {
     h3 {
       display: flex;
-      gap: .5rem;
+      gap: 0.5rem;
       padding: 0.5rem 0.5rem 0 0.5rem;
     }
     border: 1px solid var(--primary-border-color);
@@ -93,10 +123,10 @@ body {
     margin-top: 16px;
     dl {
       dd {
-        padding: .5rem;
+        padding: 0.5rem;
       }
       dt {
-        padding: .5rem;
+        padding: 0.5rem;
         color: var(--secondary-text-color);
         border-top: 1px solid var(--primary-border-color);
       }
@@ -117,7 +147,7 @@ body {
   gap: 8px;
 }
 
-.overdracht {
+.transfer {
   border-bottom: 1px solid var(--primary-border-color);
   padding-bottom: 16px;
   .login-content {
@@ -146,7 +176,6 @@ button {
   border: 1px solid var(--link-color);
   border-radius: 5px;
   cursor: pointer;
-  
 
   &:hover {
     background-color: (--link-color);
