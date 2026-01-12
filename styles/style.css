@@ -88,6 +88,11 @@ a {
   padding-bottom: 16px;
   border-bottom: 1px solid var(--primary-border-color);
 
+  a {
+    display: flex;
+    gap: 3px;
+  }
+
   dl {
     display: flex;
     gap: 4px;
@@ -101,6 +106,12 @@ a {
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-standart);
     border-radius: 4px;
+  }
+
+  .listing-adress-info {
+    span {
+      color: var(--link-color);
+    }
   }
 }
 
@@ -161,12 +172,24 @@ a {
   img {
     max-width: 100%;
   }
-}
 
-.main-image-buttons {
-  position: absolute;
-  top: 3px;
-  right: 0px;
+  .main-image-buttons {
+    position: absolute;
+    top: 7px;
+    right: 3px;
+
+    .share-button {
+      scale: 1.4;
+    }
+
+    .liked-blue-heart {
+      /* animation-name: heart-pop;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      animation-iteration-count: 1;  */
+      scale: 1.4;
+    }
+  }
 }
 
 button {

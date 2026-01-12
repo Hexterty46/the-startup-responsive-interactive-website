@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funda</title>
     <script defer src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/styleguide.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
@@ -53,10 +54,10 @@
         />
         <div class="main-image-buttons">
           <button>
-            <img src="./icons/share-blue.svg" alt="Woning delen" />
+            <img class="share-button" src="./icons/share-blue.svg" alt="Woning delen" />
           </button>
           <button>
-            <img
+            <img class="liked-blue-heart"
               src="./icons/heart-blue.svg"
               alt="Woning opslaan als favoriet"
             />
@@ -152,7 +153,10 @@
           <dt><img src="./icons/energie.svg" alt="Energielabel"></dt>
           <dd>A</dd>
         </dl>
-        <a href="">Wat worden mijn maandlasten?</a>
+        <a href="">
+          <img src="./icons/calculator.svg">
+          Wat worden mijn maandlasten?
+        </a>
       </section>
       <section class="listing-description">
         <h2>Omschrijving</h2>
