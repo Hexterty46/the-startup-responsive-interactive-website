@@ -1,4 +1,5 @@
 const shareBtn = document.querySelector(".share-button");
+const likeBtn = document.querySelector("#like");
 
 const shareData = {
     title: "Woning",
@@ -6,10 +7,20 @@ const shareData = {
     url: window.location.href
 }
 
-shareBtn.addEventListener("click", async () => {
+if (navigator.share) {
+  shareBtn.addEventListener("click", async () => {
     try {
-        await navigator.share(shareData)
+      await navigator.share(shareData);
     } catch (err) {
-        console.warn("Kan niet delen", err)
+      console.warn("Delen geannuleerd", err);
     }
+  });
+} else {
+  console.warn("De webshareAPI word niet ondersteund door de browser");
+}
+
+
+likeBtn.addEventListener("click", function() {
+    console.log("WERKT")
+    likeBtn.classList.toggle("is-liked");
 })
