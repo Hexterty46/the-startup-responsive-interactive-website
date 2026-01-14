@@ -138,6 +138,8 @@ a {
     dl {
       dd {
         padding: 0.5rem;
+        display: flex;
+        gap: 1em;
       }
       dt {
         padding: 0.5rem;
