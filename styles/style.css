@@ -11,7 +11,7 @@
   src: url("/fonts/Proxima-Nova-Regular.ttf");
 }
 
-header {
+.main-header {
   background-color: var(--primary-color);
 }
 
@@ -57,20 +57,63 @@ a {
     align-items: center;
     text-decoration: none;
     color: var(--tertiary-text-color);
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-m);
+  }
+
+  .nav-desktop {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: inline-flex;
+      font-size: var(--font-size-m);
+    }
+  }
+
+  .nav-mobile {
+    display: flex;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 
   .main-nav-list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 8px 12px;
+    justify-content: space-between;
+    padding: .5rem 0.75rem;
     list-style: none;
+
+    .logo-item {
+      a {
+        img {
+          width: 5.5rem;
+          height: auto;
+        }
+      }
+    }
+
+    .nav-account {
+      a {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        span {
+          font-size: var(--font-size-xs);
+        }
+      }
+    }
 
     nav-item {
       img {
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
       }
     }
   }
@@ -78,37 +121,148 @@ a {
 
 .bottom-image-pictures {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--primary-border-color);
+  gap: 1rem;
+
+  .bottom-plattegrond-pictures {
+    .media-options {
+      li {
+        list-style-type: none;
+      }
+      .media-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 4.797rem;
+        height: 4rem;
+        overflow: hidden;
+        border-radius: 0.25rem;
+
+        .svg-wrapper {
+          position: absolute;
+          top: 1rem;
+          width: 2rem;
+          height: 2rem;
+          padding: 0.25rem;
+          background-color: var(--primary-svg-background-color);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .bottom-360-picture {
+    .media-options {
+      li {
+        list-style-type: none;
+      }
+      .media-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 4.797rem;
+        height: 4rem;
+        overflow: hidden;
+        border-radius: 0.25rem;
+
+        .svg-wrapper {
+          position: absolute;
+          top: 1rem;
+          width: 2rem;
+          height: 2rem;
+          padding: 0.25rem;
+          background-color: var(--primary-svg-background-color);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .bottom-video-picture {
+    .media-options {
+      li {
+        list-style-type: none;
+      }
+      .media-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 4.797rem;
+        height: 4rem;
+        overflow: hidden;
+        border-radius: 0.25rem;
+
+        .svg-wrapper {
+          position: absolute;
+          top: 1rem;
+          width: 2rem;
+          height: 2rem;
+          padding: 0.25rem;
+          background-color: var(--primary-svg-background-color);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .bottom-3dtour {
+    .media-options {
+      li {
+        list-style-type: none;
+      }
+      .media-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 4.797rem;
+        height: 4rem;
+        overflow: hidden;
+        border-radius: 0.25rem;
+
+        .svg-wrapper {
+          position: absolute;
+          top: 1rem;
+          width: 2rem;
+          height: 2rem;
+          padding: 0.25rem;
+          background-color: var(--primary-svg-background-color);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }
 
 .main-listing-info {
   position: relative;
-  margin: 16px;
-  padding-bottom: 16px;
+  margin: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--primary-border-color);
 
   a {
     display: flex;
-    gap: 3px;
+    gap: 0.188rem;
   }
 
   a:first-of-type {
-    gap: 13px;
+    gap: 0.813rem;
   }
 
   dl {
     display: flex;
-    gap: 4px;
+    gap: .25rem;
   }
 
   .new-span {
-    padding: 3px 8px;
+    padding: 0.188rem 0.5rem;
     color: var(--tertiary-text-color);
-    margin-bottom: 8px;
+    margin-bottom: .5rem;
     background-color: var(--primary-color);
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-standart);
-    border-radius: 4px;
+    border-radius: .25rem;
   }
 
   .listing-adress-info {
@@ -120,8 +274,8 @@ a {
 
 .listing-description {
   position: relative;
-  margin: 16px;
-  padding-bottom: 16px;
+  margin: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--primary-border-color);
 }
 
@@ -133,8 +287,8 @@ a {
       padding: 0.5rem 0.5rem 0 0.5rem;
     }
     border: 1px solid var(--primary-border-color);
-    border-radius: 8px;
-    margin-top: 16px;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
     dl {
       dd {
         padding: 0.5rem;
@@ -149,23 +303,23 @@ a {
     }
   }
   position: relative;
-  margin: 16px;
+  margin: 1rem;
   border-bottom: 1px solid var(--primary-border-color);
 }
 
 .kaart {
   position: absolute;
-  top: 5px;
+  top: 0.313rem;
   right: 0;
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 8px;
+  gap: .5rem;
 }
 
 .transfer {
   border-bottom: 1px solid var(--primary-border-color);
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
   .login-content {
     color: var(--link-color);
   }
@@ -180,15 +334,15 @@ a {
 
   .main-image-buttons {
     position: absolute;
-    top: 7px;
-    right: 3px;
+    top: 0.438rem;
+    right: 0.188rem;
 
     .liked-heart {
-      width: 1.5em;
-      height: 1.5em;
+      width: 1.5rem;
+      height: 1.5rem;
       fill: transparent;
       stroke: var(--link-color);
-      stroke-width: 35px;
+      stroke-width: 2.188rem;
       max-width: 100%;
     }
 
@@ -205,9 +359,9 @@ a {
 button {
   background: var(--tertiary-text-color);
   color: var(--link-color);
-  padding: 8px 12px;
+  padding: .5rem .75rem;
   border: 1px solid var(--link-color);
-  border-radius: 5px;
+  border-radius: 0.313rem;
   cursor: pointer;
 
   &:hover {

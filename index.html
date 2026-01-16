@@ -10,35 +10,54 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li class="nav-item">
-            <a href="">
+          <!-- Mobile menu -->
+          <li class="nav-item nav-mobile">
+            <a href="#">
               <img src="./icons/menu.svg" alt="Menu openen" />
               <span>Menu</span>
             </a>
           </li>
+
+          <!-- Logo -->
           <li class="nav-item logo-item">
-            <a href="">
+            <a href="#">
               <img src="./icons/Logo.svg" alt="Funda home" />
             </a>
           </li>
-          <li class="nav-item">
+
+          <!-- Desktop navigation -->
+          <li class="nav-item nav-desktop">
+            <a href="#">Kopen</a>
+          </li>
+          <li class="nav-item nav-desktop">
+            <a href="#">Huren</a>
+          </li>
+          <li class="nav-item nav-desktop">
+            <a href="#">Verkopen</a>
+          </li>
+          <li class="nav-item nav-desktop">
+            <a href="#"><p>Nieuwbouw</p></a>
+          </li>
+
+          <!-- Right side -->
+          <li class="nav-item nav-account">
             <a href="#">
-              <img src="./icons/house.svg" alt="Mjin huis" />
+              <img src="./icons/house.svg" alt="Mijn huis" />
               <span>Mijn Huis</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-account">
             <a href="#">
-              <img src="./icons/heart.svg" alt="Favorieten" />
+              <img src="./icons/heart.svg" alt="Toevoegen aan favorieten" />
               <span>Favorieten</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-account">
             <a href="#">
-              <img src="./icons/avatar-anonymous.svg" alt="Inloggen" />
+              <img src="./icons/avatar-anonymous.svg" alt="Inloggen en registreren" />
               <span>Inloggen</span>
             </a>
           </li>
@@ -72,14 +91,29 @@
         </div>
       </div>
       <div class="bottom-image-pictures">
-        <div class="bottom-plattegrond-picture">
+        <div class="bottom-plattegrond-pictures">
           <nav class="media-options">
             <ul>
               <li>
                 <a href="">
                   <div class="media-wrapper">
-                    <img src="" alt="" />
-                    <!-- <svg></svg> -->
+                    <img width="500" src="./images/plattegrond.png" alt="Plattegrond van de woning" />
+                    <div class="svg-wrapper">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M21 3.75C21 3.33579 20.6642 3 20.25 3H3.75C3.33579 3 3 3.33579 3 3.75V20.25C3 20.6642 3.33579 21 3.75 21H9V19.5H4.5V4.5H19.5V19.5H15.62L10.4 14.28L9.34 15.34L15 21H20.25C20.6642 21 21 20.6642 21 20.25V3.75Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
                   </div>
                   <span>Plattegrond</span>
                 </a>
@@ -87,14 +121,29 @@
             </ul>
           </nav>
         </div>
-        <div class="bottom-360-photo">
+        <div class="bottom-360-picture">
           <nav class="media-options">
             <ul>
               <li>
                 <a href="">
                   <div class="media-wrapper">
-                    <img src="" alt="" />
-                    <!-- <svg></svg> -->
+                    <img width="500" src="./images/panorama.png" alt="360 graden foto's van de woning" />
+                    <div class="svg-wrapper">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M20.5181 4.75002C20.5181 4.3358 20.1823 4.00002 19.7681 4.00002H14.7681C14.3539 4.00002 14.0181 4.3358 14.0181 4.75002V9.75002C14.0181 10.1642 14.3539 10.5 14.7681 10.5C15.1823 10.5 15.5181 10.1642 15.5181 9.75002V6.25002C18.3575 8.22143 19.3328 11.9703 17.8141 15.0755C16.2953 18.1807 12.7373 19.7124 9.43795 18.6814C6.13858 17.6503 4.08582 14.3653 4.60541 10.9478C5.125 7.53038 8.06135 5.00388 11.5181 5.00002V3.50002C7.39312 3.49165 3.85757 6.44608 3.13298 10.5069C2.4084 14.5677 4.70395 18.5626 8.57723 19.9814C12.4505 21.4002 16.7834 19.8333 18.8532 16.2652C20.9231 12.6972 20.1324 8.15806 16.9781 5.50002H19.7681C20.1823 5.50002 20.5181 5.16423 20.5181 4.75002Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
                   </div>
                   <span>360 foto's</span>
                 </a>
@@ -108,8 +157,23 @@
               <li>
                 <a href="">
                   <div class="media-wrapper">
-                    <img src="" alt="" />
-                    <!-- <svg></svg> -->
+                    <img src="./images/video.png" alt="Video van de woning" />
+                    <div class="svg-wrapper">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M20.6967 11.625C20.6321 11.5258 20.5447 11.4435 20.4417 11.385L20.3867 11.34L7.77669 3.15003L7.69669 3.11003H7.65169L7.56169 3.08003H7.50669L7.41669 3.03003H7.21169C7.00704 3.06402 6.82584 3.18181 6.71169 3.35503C6.69251 3.38704 6.67579 3.42047 6.66169 3.45503C6.64738 3.48909 6.63568 3.52419 6.62669 3.56003V3.60003C6.62444 3.63332 6.62444 3.66673 6.62669 3.70003C6.62669 3.70003 6.62669 3.73003 6.62669 3.74503V20.245C6.62669 20.245 6.62669 20.275 6.62669 20.29C6.62445 20.3233 6.62445 20.3567 6.62669 20.39V20.43C6.63568 20.4659 6.64738 20.501 6.66169 20.535C6.67719 20.5714 6.69558 20.6066 6.71669 20.64C6.83084 20.8133 7.01204 20.931 7.21669 20.965H7.56669L7.65669 20.935H7.69669L7.77669 20.895L20.4817 12.645C20.8165 12.4185 20.9116 11.9674 20.6967 11.625ZM8.11669 5.16003L18.6967 12.03L8.11669 18.9V5.16003Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
                   </div>
                   <span>Video</span>
                 </a>
@@ -123,8 +187,11 @@
               <li>
                 <a href="">
                   <div class="media-wrapper">
+                    <!-- Image moet nog gezet worden -->
                     <img src="" alt />
-                    <!-- <svg></svg> -->
+                    <div class="svg-wrapper">
+                      <!-- Moet nog gevuld worden -->
+                    </div>
                   </div>
                   <span>3D Tour</span>
                 </a>
