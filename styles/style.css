@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Proxima Nova, Arial, sans-serif, serif;
+  font-family:
+    Proxima Nova,
+    Arial,
+    sans-serif,
+    serif;
   line-height: 1.5;
 }
 
@@ -50,6 +54,18 @@ a {
   text-decoration: none;
 }
 
+.nav-path {
+  display: none;
+  color: var(--secondary-text-color);
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 1rem 0rem 1rem;
+    gap: 0.25rem;
+  }
+}
+
 .main-nav {
   a {
     display: flex;
@@ -81,7 +97,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .5rem 0.75rem;
+    padding: 0.5rem 0.75rem;
     list-style: none;
 
     .logo-item {
@@ -126,6 +142,10 @@ a {
   border-bottom: 1px solid var(--primary-border-color);
   gap: 1rem;
 
+  @media (min-width: 768px) {
+    display: none;
+  }
+
   .bottom-plattegrond-pictures {
     .media-options {
       li {
@@ -135,7 +155,7 @@ a {
         position: relative;
         display: flex;
         justify-content: center;
-        width: 4.797rem;
+        width: 4rem;
         height: 4rem;
         overflow: hidden;
         border-radius: 0.25rem;
@@ -162,7 +182,7 @@ a {
         position: relative;
         display: flex;
         justify-content: center;
-        width: 4.797rem;
+        width: 4rem;
         height: 4rem;
         overflow: hidden;
         border-radius: 0.25rem;
@@ -189,7 +209,7 @@ a {
         position: relative;
         display: flex;
         justify-content: center;
-        width: 4.797rem;
+        width: 4rem;
         height: 4rem;
         overflow: hidden;
         border-radius: 0.25rem;
@@ -216,7 +236,7 @@ a {
         position: relative;
         display: flex;
         justify-content: center;
-        width: 4.797rem;
+        width: 4rem;
         height: 4rem;
         overflow: hidden;
         border-radius: 0.25rem;
@@ -246,28 +266,58 @@ a {
     gap: 0.188rem;
   }
 
-  a:first-of-type {
+  /* a:first-of-type {
     gap: 0.813rem;
-  }
+  } */
 
   dl {
     display: flex;
-    gap: .25rem;
+    gap: 0.25rem;
+
+    dd {
+      span {
+        display: none;
+        color: var(--secondary-text-color);
+
+        @media (min-width: 768px) {
+          display: inline-flex;
+        }
+      }
+    }
+
+    /* @media (min-width: 768px) {
+      gap: 2rem;
+    } */
   }
 
   .new-span {
     padding: 0.188rem 0.5rem;
     color: var(--tertiary-text-color);
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     background-color: var(--primary-color);
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-standart);
-    border-radius: .25rem;
+    border-radius: 0.25rem;
   }
 
   .listing-adress-info {
     span {
       color: var(--link-color);
+    }
+  }
+
+  .monthly-payments-desktop {
+    display: none;
+    align-items: center;
+    gap: 1rem;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  .mortage-calculator-link {
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 }
@@ -314,7 +364,7 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .transfer {
@@ -356,10 +406,30 @@ a {
   }
 }
 
+.desktop-media-options {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    margin-left: 1rem;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+}
+
 button {
   background: var(--tertiary-text-color);
   color: var(--link-color);
-  padding: .5rem .75rem;
+  padding: 0.5rem 0.75rem;
   border: 1px solid var(--link-color);
   border-radius: 0.313rem;
   cursor: pointer;
