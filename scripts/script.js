@@ -2,7 +2,7 @@ const shareBtn = document.querySelector(".share-button");
 const likeBtn = document.querySelector("#like");
 
 const shareData = {
-    title: "Woning",
+    title: "Funda Woning",
     text: "Bekijk deze woning op Funda",
     url: window.location.href
 }
