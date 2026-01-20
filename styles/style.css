@@ -270,6 +270,12 @@ a {
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--primary-border-color);
 
+  .listing-price-info-mobile {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
   a {
     display: flex;
     gap: 0.188rem;
@@ -401,6 +407,7 @@ a {
     gap: 0.2rem;
     overflow: hidden;
     border-radius: 0.5rem;
+    cursor: pointer;
 
     .primary-picture {
       grid-column: 1 / 2;
