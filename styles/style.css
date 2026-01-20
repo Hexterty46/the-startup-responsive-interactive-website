@@ -494,8 +494,22 @@ button {
   border: 1px solid var(--link-color);
   border-radius: 0.313rem;
   cursor: pointer;
+}
 
-  &:hover {
-    /* background-color: (--link-color); */
+/* Footer styling */
+/* Footer word nog gemaakt */
+footer {
+
+  .desktop-footer {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+  }
+  .mobile-footer {
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }
