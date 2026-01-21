@@ -1,5 +1,5 @@
 const shareBtn = document.querySelector(".share-button");
-const likeBtn = document.querySelector("#like");
+const likeBtn = document.querySelector("#like-button");
 
 const shareData = {
     title: "Funda Woning",
@@ -16,7 +16,7 @@ if (navigator.share) {
     }
   });
 } else {
-  console.warn("De webshareAPI word niet ondersteund door de browser");
+  console.warn("De webshareAPI word niet ondersteund door deze browser :)");
 }
 
 
