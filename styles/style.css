@@ -341,7 +341,43 @@ a {
 }
 
 .features {
-  position: relative;
+  .small-advertisement-section {
+    padding: 1rem;
+    background-color: rgb(238 239 245);
+    border: 1px solid var(--primary-border-color);
+    border-top: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    .advertisement-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 3px 12px;
+      border: 1px solid var(--link-color);
+      border-radius: 0.25rem;
+    }
+
+    img {
+      width: auto;
+      height: 24px;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  #transfer {
+    border-bottom: 1px solid var(--primary-border-color);
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 1rem;
+    .login-content {
+      color: var(--link-color);
+    }
+  }
+
   section {
     h3 {
       display: flex;
@@ -375,7 +411,6 @@ a {
   }
   position: relative;
   margin: 1rem;
-  border-bottom: 1px solid var(--primary-border-color);
 }
 
 .kaart {
@@ -386,14 +421,6 @@ a {
   flex-direction: column;
   text-align: center;
   gap: 0.5rem;
-}
-
-.transfer {
-  border-bottom: 1px solid var(--primary-border-color);
-  padding-bottom: 1rem;
-  .login-content {
-    color: var(--link-color);
-  }
 }
 
 .main-image-pictures {
@@ -499,12 +526,49 @@ button {
 /* Footer styling */
 /* Footer word nog gemaakt */
 footer {
+  border-top: 1px solid var(--primary-border-color);
+  background-color: var(--primary-footer-background);
 
   .desktop-footer {
     display: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem 2.5rem;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        a {
+          display: inline-block;
+          margin-bottom: 0.65rem;
+          font-size: var(--font-size-m);
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+        strong {
+          display: block;
+          margin-bottom: 1rem;
+          font-size: var(--font-size-m);
+          font-weight: var(--font-weight-standart);
+          color: var(--primary-text-color);
+        }
+      }
+    }
 
     @media (min-width: 768px) {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
   .mobile-footer {
