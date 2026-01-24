@@ -20,6 +20,7 @@ De toegangkelijkheid van de website is met verschillende manieren getest voor op
 
 ## Huisstijl
 Alle kleuren, fonts, font-sizes, en natuurlijk spacing is gebruikt volgens de huisstijl van Funda. Wat ook terug te zien is in de CSS bestand.
+
 <img width="321" height="836" alt="image" src="https://github.com/user-attachments/assets/0d43a41c-67bb-44cc-a031-d966497e79d3" />
 
 ## Interactief
